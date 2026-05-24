@@ -1,0 +1,109 @@
+.worship-section {
+  padding: 8rem 2rem;
+  background: var(--black);
+}
+
+.worship-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.worship-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.worship-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--orange-light);
+  margin-bottom: 1rem;
+}
+
+.worship-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.worship-desc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.worship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.worship-card {
+  padding: 2.5rem;
+  background: var(--surface-1);
+  border-right: 1px solid var(--border);
+  transition: background var(--transition);
+  cursor: default;
+}
+
+.worship-card:last-child { border-right: none; }
+
+.worship-card:hover {
+  background: var(--surface-2);
+}
+
+.worship-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.worship-day {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--orange-light);
+  font-weight: 600;
+}
+
+.worship-time {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  font-weight: 400;
+}
+
+.worship-card h3 {
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.worship-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .worship-section { padding: 5rem 1.5rem; }
+  .worship-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .worship-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .worship-card:last-child { border-bottom: none; }
+}

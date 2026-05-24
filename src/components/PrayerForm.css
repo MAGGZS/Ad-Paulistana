@@ -1,0 +1,190 @@
+.prayer-section {
+  padding: 8rem 2rem;
+  background: var(--black);
+  border-top: 1px solid var(--border);
+}
+
+.prayer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Lado esquerdo */
+.prayer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.prayer-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--orange-light);
+  margin-bottom: 1.25rem;
+}
+
+.prayer-left h2 {
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+  line-height: 1.05;
+}
+
+.prayer-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.prayer-quote {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.prayer-ref {
+  font-size: 0.72rem;
+  color: var(--orange-light);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Lado direito */
+.prayer-right {
+  background: var(--surface-1);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  border: 1px solid var(--border);
+}
+
+.prayer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+
+.field label span {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-faint);
+  margin-left: 0.3rem;
+}
+
+.field input,
+.field textarea {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.1rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  font-weight: 300;
+  transition: border-color var(--transition);
+  resize: none;
+  width: 100%;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: rgba(255, 107, 0, 0.5);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--text-faint);
+}
+
+.prayer-btn {
+  padding: 1rem;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition);
+  font-family: var(--font-body);
+  margin-top: 0.5rem;
+}
+
+.prayer-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Success */
+.prayer-success {
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.success-check {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prayer-success h3 {
+  font-size: 1.6rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.prayer-success p {
+  color: var(--text-muted);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .prayer-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .prayer-section { padding: 5rem 1.5rem; }
+  .prayer-right { padding: 2rem; }
+}
