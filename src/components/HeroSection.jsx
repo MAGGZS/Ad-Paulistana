@@ -35,7 +35,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.25 }}
         >
           Assembleia de Deus<br />
-          <em>Paulistana <span className="hero-badge">Paulistana</span></em>
+          <em className='hero-badge'>Paulistana</em>
         </motion.h1>
 
         <motion.p
