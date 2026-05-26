@@ -21,7 +21,7 @@ const Footer = () => (
 
       <div className="footer-contact">
         <p className="footer-col-title">Contato</p>
-        <span>(11) 9999-8888</span>
+        <span>(11) 96370-3656</span>
         <span>contato@adpaulistana.org.br</span>
         <span>Jandira — SP</span>
       </div>

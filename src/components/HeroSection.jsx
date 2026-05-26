@@ -20,15 +20,6 @@ const HeroSection = () => {
       <div className="hero-overlay" />
 
       <div className="hero-body">
-        <motion.span
-          className="hero-eyebrow"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-        >
-          Jandira — Gabriela 1
-        </motion.span>
-
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
