@@ -1,12 +1,16 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import img1 from '../assets/593686715_1299724778859183_180269240575211972_n.jpg';
+import img2 from '../assets/599530811_1309608137870847_5350105628923022112_n.jpg';
+import img3 from '../assets/600215517_1308912894607038_5958026315727943443_n.jpg';
+import img4 from '../assets/648285244_1381243057374021_541633479157559085_n.jpg';
 import './ChurchGallery.css';
 
 const images = [
-  { id: 1, title: 'Grupo de louvor',       src: 'https://scontent.fcgh15-1.fna.fbcdn.net/v/t39.30808-6/561648907_1254384173393244_7071785136394207181_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeER6QOgiegDJk_2pJpUmkAv0Kl3e_sxZr3QqXd7-zFmvaP7aAOl9MtNxD-1RVKUxtywsefoOaFAsFBsIahvQGH2&_nc_ohc=wN_n8v3_u8EQ7kNvwFfG3R-&_nc_oc=AdoOKExHjy_JuZ9mUP8Eqn9nowG4E_opNRZuJrM6D0gdarDXGizKnXhubh7fb7Zao5qHYujlyBdI4Hr4JPt9XZ_2&_nc_zt=23&_nc_ht=scontent.fcgh15-1.fna&_nc_gid=5EqnSW6akK_10ZMKip25Fg&_nc_ss=7b2a8&oh=00_Af51om0N3SLX67O-NbYZgp57aj9br9klWR75UUT6MPuJBw&oe=6A1AC34E' },
-  { id: 2, title: 'Auditório',             src: 'https://scontent.fcgh15-1.fna.fbcdn.net/v/t51.82787-15/703199233_18206114896341522_1317695510014222147_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGb08vrwESqyuDD6JtyrBBfllD69bNgHQeWUPr1s2AdBwPVwojWzsaLplKIdJqKm-s04zfhOmz3BT_btKN_cplr&_nc_ohc=6wKhg-xCi2MQ7kNvwEZ1fOR&_nc_oc=AdqcPrd3v9drZ0dzHscQ9cjvrskbXfn7smYCRfukl0PkOVC3jgqNzrJrVh3wcp5QAS-81ZiJsqEbntn5JreeiEdJ&_nc_zt=23&_nc_ht=scontent.fcgh15-1.fna&_nc_gid=M1prr5zDDr-czThaVWR_pA&_nc_ss=7b2a8&oh=00_Af6Mg-r3e3XbkxyTGEFEmajQVrHFCH9su7Feai_dCtz67g&oe=6A1AD3F5' },
-  { id: 3, title: 'Cultos',                src: 'https://scontent.fcgh39-1.fna.fbcdn.net/v/t39.30808-6/648285244_1381243057374021_541633479157559085_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFGivAySPE8aY0F-G6nPK8mWT3zgTCK51NZPfOBMIrnU7zMUghXBAhYJKAfWu32oGZO7Hso9mRz0vn5vDdxBhpU&_nc_ohc=0WQQnSyRktwQ7kNvwGmnpT7&_nc_oc=AdrGwFXHCqgpvdyKdWaTvuz6clv3tkJfD99I8DF7ev1bU9Bax-3sBCa_AgSxyau2gCNfal6XXO6bn80yhnVuhKX0&_nc_zt=23&_nc_ht=scontent.fcgh39-1.fna&_nc_gid=dkqGlpL5c9aM87sl2BVJYA&_nc_ss=7b2a8&oh=00_Af6bpN9nQgQ7lOz-f5pcb9IYCVfkpPBU4rRVESGVpzUzJA&oe=6A1ABEA5' },
-  { id: 4, title: 'Escola Bíblica',        src: 'https://scontent.fcgh39-1.fna.fbcdn.net/v/t39.30808-6/593686715_1299724778859183_180269240575211972_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGArrVOxd9c29D2-yhYSMVQF-Dg1r_ApUwX4ODWv8ClTHpuWsapQqDED4KmTm8jiLPVYiPOc62pkrFYJFPCSxE1&_nc_ohc=jEXxTDwSFj8Q7kNvwF5ixOp&_nc_oc=AdpAUfxHiSu9c4NaJ4ye6N3q62ijVcPa7BdgxfzpUeTAlCrNra-4M9_to7---BbxF7D8sNX-RpsGhTbX3SdVvPFV&_nc_zt=23&_nc_ht=scontent.fcgh39-1.fna&_nc_gid=Ae7XdOwpwKFMSTui1r7Iuw&_nc_ss=7b2a8&oh=00_Af6Z_k3SNklA_tmOMVjzrCgfy4E8A1LrHgbZkC-mBwjO8A&oe=6A1ADAF6' },
+  { id: 1, title: 'Grupo de louvor',  src: img1 },
+  { id: 2, title: 'Cultos',      src: img2 },
+  { id: 3, title: 'Ceia',      src: img3 },
+  { id: 4, title: 'Escola Bíblica',          src: img4 },
 ];
 
 const ChurchGallery = () => {
