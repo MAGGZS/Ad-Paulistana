@@ -51,6 +51,15 @@ const PrayerForm = () => {
                   onChange={e => setForm({ ...form, name: e.target.value })}
                 />
               </div>
+               <div className="field">
+                <label>Telefone<span>(opcional)</span></label>
+                <input
+                  type="text"
+                  placeholder="Informe o seu telefone..."
+                  value={form.name}
+                  onChange={e => setForm({ ...form, name: e.target.value })}
+                />
+              </div>
               <div className="field">
                 <label>Pedido de Oração</label>
                 <textarea
